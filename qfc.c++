@@ -14,10 +14,10 @@ int main() {
     cout << "a = ";
     cin >> a;
 
-    cout << "\nb = ";
+    cout << "b = ";
     cin >> b;
 
-    cout << "\nc = ";
+    cout << "c = ";
     cin >> c;
 
     double disc = b*b - 4*a*c;
@@ -33,7 +33,6 @@ int main() {
         double root1 = (-b + sqrt(b*b - 4*a*c))/(2*a);
         double root2 = (-b - sqrt(b*b - 4*a*c))/(2*a);
 
-        cout << "a = " << a << "\nb = " << b << "\nc = " << c << "\n";
         cout << "The roots are " << root1 << " and " << root2 << "\n";
     }
 
@@ -41,7 +40,6 @@ int main() {
         double real = -b/(2*a);
         double disc = abs(b*b - 4*a*c);
         double i = (sqrt(disc))/(2*a);
-        cout << "i = " << i << "\na = " << a << "\nb = " << b << "\nc = " << c << "\n";
         std::complex<double> root1(real,abs(i));
         std::complex<double> root2(real,-abs(i));
 
